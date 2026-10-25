@@ -1,0 +1,129 @@
+
+.skilltwin-ai-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 17px;
+  border: 0;
+  border-radius: 999px;
+  background: #7967f5;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 32px #0003;
+}
+
+.skilltwin-ai-panel {
+  position: fixed;
+  right: 24px;
+  bottom: 84px;
+  z-index: 1000;
+  width: min(390px, calc(100vw - 32px));
+  height: min(560px, calc(100vh - 120px));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ffffff24;
+  border-radius: 18px;
+  background: #101827;
+  color: #eef2ff;
+  box-shadow: 0 24px 70px #0006;
+}
+
+.skilltwin-ai-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ffffff18;
+}
+
+.skilltwin-ai-header > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.skilltwin-ai-header small {
+  color: #a5b1c7;
+}
+
+.skilltwin-ai-header button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+.skilltwin-ai-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+}
+
+.skilltwin-ai-message {
+  max-width: 90%;
+  padding: 10px 12px;
+  border-radius: 13px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.skilltwin-ai-message.assistant {
+  align-self: flex-start;
+  background: #202b3d;
+}
+
+.skilltwin-ai-message.user {
+  align-self: flex-end;
+  background: #7967f5;
+  color: white;
+}
+
+.skilltwin-ai-error {
+  color: #ffb4b4;
+  font-size: 12px;
+}
+
+.skilltwin-ai-input {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #ffffff18;
+}
+
+.skilltwin-ai-input input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #ffffff22;
+  border-radius: 10px;
+  background: #0b1220;
+  color: white;
+}
+
+.skilltwin-ai-input button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: #7967f5;
+  color: white;
+  cursor: pointer;
+}
+
+.skilltwin-ai-input button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
